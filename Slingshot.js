@@ -34,7 +34,7 @@ class SlingShot{
             image(this.sling2,170,20);
 
             if(pointA.x < 230){
-            
+                push();
                 strokeWeight(4);
                 stroke(48,23,8)
                 //right line
@@ -43,6 +43,7 @@ class SlingShot{
                 //left line
                 line(pointA.x - 20, pointA.y, pointB.x, pointB.y);
                 image(this.sling3, pointA.x - 20,pointA.y - 10, 10, 30)
+                pop();
             }
             else
             {
